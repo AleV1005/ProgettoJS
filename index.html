@@ -1,1 +1,36 @@
-boh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore Codice fiscale</title>
+</head>
+<body>
+    <h1>Generatore Codice fiscale</h1>
+    <div>
+        <form>
+            Cognome
+            <br><input type="text" id="cognome">
+            <br><br>
+            Nome
+            <br><input type="text" id="nome">
+            <br><br>
+            Data di nascita
+            <br>
+            <input type="date" id="data">
+            <br><br>
+            Comune
+            <br><input type="text" id = "comune">
+            <br><br>
+            Sesso<br>
+            <select name="Sesso" id="sesso">
+                <option value="uomo">Uomo</option>
+                <option value="donna">Donna</option>
+            </select>
+            <br><br>
+            <input type="button" value="Genera" onclick="generaCF()">
+        </form>
+        <br><input type="text" readonly>
+    </div>
+</body>
+</html>
