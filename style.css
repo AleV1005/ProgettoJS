@@ -12,14 +12,14 @@ h1 {
 div {
     background: white;
     padding: 20px;
-    width: 370px;
+    width: 360px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 input, select {
-    width: 100%;
+    width: 75%;
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
