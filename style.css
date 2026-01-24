@@ -19,7 +19,7 @@ div {
 }
 
 input, select {
-    width: 85%;
+    width: 100%;
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
