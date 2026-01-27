@@ -19,6 +19,7 @@ div {
 }
 
 input, select {
+    text-align: center;
     width: 100%;
     padding: 8px;
     margin-top: 5px;
