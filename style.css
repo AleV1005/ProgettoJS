@@ -19,7 +19,6 @@ div {
 }
 
 input, select {
-    text-align: center;
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -28,7 +27,6 @@ input, select {
 }
 
 input[type="button"] {
-    text-align: center;
     background-color: #007bff;
     color: white;
     cursor: pointer;
@@ -36,6 +34,5 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    text-align: center;
     background-color: #0056b3;
 }
