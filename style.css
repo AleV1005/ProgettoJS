@@ -28,6 +28,7 @@ input, select {
 }
 
 input[type="button"] {
+    text-align: center;
     background-color: #007bff;
     color: white;
     cursor: pointer;
@@ -35,5 +36,6 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
+    text-align: center;
     background-color: #0056b3;
 }
