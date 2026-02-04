@@ -146,6 +146,8 @@ function generaCF() {
     document.querySelector("input[readonly]").value = risultato;
 }
 
+const btn = document.getElementById("themeToggle");
+
 btn.onclick = function () {
     document.body.classList.toggle("dark");
 
