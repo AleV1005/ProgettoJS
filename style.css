@@ -115,7 +115,7 @@ body.dark input[type="button"]:hover {
 }
 
 body.dark #sesso{
-    background-color: black;
+    background-color: #666;
     color: white; 
     width: 100%;  
 }
