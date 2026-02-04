@@ -38,9 +38,8 @@ input[type="button"] {
     box-sizing: border-box;  /* mantiene larghezza corretta */
 }
 
-#sesso {s
-    background-color: white;
-    color: black; 
+#sesso {
+    background-color: white; 
     width: 100%; 
 }
 
