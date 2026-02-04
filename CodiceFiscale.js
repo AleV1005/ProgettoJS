@@ -93,6 +93,12 @@ class CodiceFiscale {
         switch (this.comune) {
             case "aprilia": codiceComune = "a341"; break;
             case "genzano": codiceComune = "d972"; break;
+            case "velletri": codiceComune = "l719"; break;
+            case "latina": codiceComune = "e472"; break;
+            case "cisterna": codiceComune = "c740"; break;
+            case "lariano": codiceComune = "m207"; break;
+            case "artena": codiceComune = "a446"; break;
+            case "albano": codiceComune = "a132"; break;
             default: codiceComune = "XXX"; break;
         }
         this.codiceFiscale += codiceComune;
