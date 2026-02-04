@@ -108,16 +108,3 @@ body.dark input[type="button"]:hover {
     background-color: #0066cc;
 }
 
-body.dark button#themeToggle {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #4c8cff;
-    background-color: #4c8cff;
-    color: white;
-    box-sizing: border-box;
-}
-
-body.dark button#themeToggle:hover {
-    background-color: #0066cc;
-}
