@@ -146,17 +146,12 @@ function generaCF() {
     document.querySelector("input[readonly]").value = risultato;
 }
 
-Oment.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("themeToggle");
+btn.onclick = function () {
+    document.body.classList.toggle("dark");
 
-    btn.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-
-        // cambia testo bottone
-        if (document.body.classList.contains("dark")) {
-            btn.textContent = "☀️ Light Mode";
-        } else {
-            btn.textContent = "🌙 Dark Mode";
-        }
-    });
-});
+    if (document.body.classList.contains("dark")) {
+        btn.textContent = "☀️ Light Mode";
+    } else {
+        btn.textContent = "🌙 Dark Mode";
+    }
+};
