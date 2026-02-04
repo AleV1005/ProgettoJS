@@ -64,11 +64,20 @@ body.dark div {
     background: #2b2b2b;
 }
 
+body.dark h1 {
+    color: white;
+}
+
 body.dark input,
 body.dark select {
     background: #3a3a3a;
     color: white;
     border: 1px solid #666;
+}
+
+body.dark input[type="button"] {
+    background-color: #4c8cff;
+}    border: 1px solid #666;
 }
 
 body.dark input[type="button"] {
