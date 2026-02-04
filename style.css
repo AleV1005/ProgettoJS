@@ -19,7 +19,7 @@ div {
 }
 
 input, select {
-    width: 100%;
+    width: 95%;
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
@@ -36,6 +36,12 @@ input[type="button"] {
     color: white;
     cursor: pointer;
     box-sizing: border-box;  /* mantiene larghezza corretta */
+}
+
+#sesso {s
+    background-color: white;
+    color: black; 
+    width: 100%; 
 }
 
 input[type="button"]:hover {
@@ -107,4 +113,3 @@ body.dark input[type="button"] {
 body.dark input[type="button"]:hover {
     background-color: #0066cc;
 }
-
