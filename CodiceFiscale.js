@@ -104,7 +104,10 @@ class CodiceFiscale {
         this.codiceFiscale += codiceComune;
     }
 
-	calcolaCarattereControllo() {
+calcolaCarattereControllo() {
+
+    // sicurezza: deve avere 15 caratteri prima del controllo
+    if (this.codiceFiscale.length !== 15) return;
 
     const dispari = {
         '0':1,'1':0,'2':5,'3':7,'4':9,'5':13,'6':15,'7':17,'8':19,'9':21,
@@ -123,17 +126,22 @@ class CodiceFiscale {
     let somma = 0;
 
     for (let i = 0; i < 15; i++) {
-        let c = this.codiceFiscale[i].toUpperCase();
+
+        let c = this.codiceFiscale[i];
+
+        if (!c) continue;   // ⭐ evita crash
+
+        c = c.toUpperCase();
 
         if ((i + 1) % 2 === 0) {
-            somma += pari[c];
+            somma += pari[c] ?? 0;
         } else {
-            somma += dispari[c];
+            somma += dispari[c] ?? 0;
         }
     }
 
     const lettere = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-     this.codiceFiscale += lettere[somma % 26];
+    this.codiceFiscale += lettere[somma % 26];
 }
 
     stampaCodice() {
@@ -185,8 +193,8 @@ btn.onclick = function () {
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
-        btn.textContent = "☀️ Light Mode";
+        btn.textContent = "â˜€ï¸ Light Mode";
     } else {
-        btn.textContent = "🌙 Dark Mode";
+        btn.textContent = "ðŸŒ™ Dark Mode";
     }
 };
