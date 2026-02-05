@@ -195,6 +195,6 @@ btn.onclick = function () {
     if (document.body.classList.contains("dark")) {
         btn.textContent = "â˜€ï¸ Light Mode";
     } else {
-        btn.textContent = "ðŸŒ™ Dark Mode";
+        btn.textContent = "🌙Dark Mode";
     }
 };
